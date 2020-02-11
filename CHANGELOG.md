@@ -2,5 +2,5 @@
 
 范围|描述|commitId
 --|--|--
- - | init | 3736aa6
+ - | init | [3736aa6](https://github.com/QuentinHsu/WebBlog/commit/3736aa6)
 
