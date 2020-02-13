@@ -15,7 +15,7 @@ export default new VueRouter({
         },
         // 使用 Lazy loading 懒加载
         // {
-        //     path: 
+        //     path:
         // }
     ]
 })
