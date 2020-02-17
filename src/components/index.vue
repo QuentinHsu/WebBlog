@@ -16,15 +16,22 @@
           </el-row>
         </el-col>
         <el-row>
-          <el-col class="logo" :span="4" :offset="2">
-            <img src="@/assets/logo/LOGO-black.png" alt="logo">
+          <el-col class="logo" :span="24" :offset="1">
+            <!-- <img src="@/assets/logo/LOGO-black.png" alt="logo"> -->
+            <el-row>
+              <el-col :span="6" class="blogMainInfo">
+                <h2>{{blogName}}</h2>
+                <div class="redBottom">
+                  <p>{{aWord}}</p>
+                  <!-- TODO: 添加打字机效果 -->
+                </div>
+              </el-col>
+            </el-row>
           </el-col>
         </el-row>
-        <el-card class="content">
-          ABCDEFG
+        <el-card class="content" shadow="never">
           <el-row>
             <el-col :span="4">
-              <!-- TODO:通过计算属性 显示 年份 -->
               {{dateYear}}
             </el-col>
           </el-row>
@@ -34,11 +41,13 @@
 
   </div>
 </template>
-// TODO: 字体响应式
+// TODO: 字体响应式，媒体查询
 <script>
 export default {
   data() {
     return {
+      blogName: 'KunYunYe',
+      aWord: '人生本就过得不愉快,不如来点罗曼蒂克。',
       dateYear: '',
     }
   },
@@ -55,20 +64,37 @@ export default {
       this.dateYear = d.getFullYear()
     }
   },
-  // mounted: {
-  //   yearNum()
-  // }
+  mounted() {
+    this.yearNum()
+  }
 }
 </script>
 
 <style lang="scss">
 .window {
   margin: 0 auto;
-  width: 80%;
-  font-size: 2vmax;
+  width: 60%;
+  font-size: 1.5vmax;
   color: black;
-  .logo img {
-    width: 100%;
+  .logo {
+    img {
+      display: block;
+      width: 100%;
+    }
+    .blogMainInfo {
+      h2 {
+        font-size: 2vmax;
+      }
+      .redBottom {
+        color: red;
+        border-bottom-style: solid;
+        p {
+          color: black;
+          margin-top: -1vmax;
+          font-size: 0.7vmax;
+        }
+      }
+    }
   }
 }
 </style>

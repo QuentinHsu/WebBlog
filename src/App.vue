@@ -15,7 +15,7 @@ export default {
   font-family: 'SourceHanSerif','MFYanSong','Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #000000;
   font-size: 2em;
 }
