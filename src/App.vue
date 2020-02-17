@@ -12,7 +12,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'MFYanSong','Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'SourceHanSerif','MFYanSong','Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

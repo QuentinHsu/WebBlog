@@ -1,8 +1,9 @@
-# 0.1.0 (2020-02-16)
+# 0.1.0 (2020-02-17)
 
 ### 🌟 新功能
 范围|描述|commitId
 --|--|--
+ index | 引入特定字体 | [5e8ed00](https://github.com/QuentinHsu/WebBlog/commit/5e8ed00)
  index.vue | 添加头像模块（但只是demo，没想好如何更恰当 | [ccd6496](https://github.com/QuentinHsu/WebBlog/commit/ccd6496)
 
 
