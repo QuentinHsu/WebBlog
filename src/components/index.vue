@@ -28,14 +28,18 @@
               </el-col>
             </el-row>
           </el-col>
+          <el-col :offset="1" class="content">
+            <template shadow="never">
+              <el-row>
+                <el-col :span="4" class="todayYearNum">
+                  {{dateYear}}
+                </el-col>
+              </el-row>
+            </template>
+          </el-col>
+          
         </el-row>
-        <el-card class="content" shadow="never">
-          <el-row>
-            <el-col :span="4">
-              {{dateYear}}
-            </el-col>
-          </el-row>
-        </el-card>
+        
       </el-card>
     </el-row>
 
@@ -71,30 +75,5 @@ export default {
 </script>
 
 <style lang="scss">
-.window {
-  margin: 0 auto;
-  width: 60%;
-  font-size: 1.5vmax;
-  color: black;
-  .logo {
-    img {
-      display: block;
-      width: 100%;
-    }
-    .blogMainInfo {
-      h2 {
-        font-size: 2vmax;
-      }
-      .redBottom {
-        color: red;
-        border-bottom-style: solid;
-        p {
-          color: black;
-          margin-top: -1vmax;
-          font-size: 0.7vmax;
-        }
-      }
-    }
-  }
-}
+@import url('../styles/index.scss');
 </style>

@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'      // 引入 VueRouter
 import 'normalize.css/normalize.css'    // 引入 normalize.css
-import './styles/index.css'
+import '@/assets/font/font.css'         // 字体文件引入
+// import './styles/index.css'
 import router from '@/router/router.js'        // 引入 router.js
 
 import App from './App.vue'

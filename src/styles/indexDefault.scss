@@ -1,0 +1,30 @@
+.window {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 1.5vmax;
+    color: black;
+    .logo {
+      img {
+        display: block;
+        width: 100%;
+      }
+      .blogMainInfo {
+        h2 {
+          font-size: 2vmax;
+        }
+        .redBottom {
+          color: red;
+          border-bottom-style: solid;
+          border-width: 0.3vmax;
+          p {
+            color: black;
+            margin-top: -1vmax;
+            font-size: 0.7vmax;
+          }
+        }
+      }
+    }
+    .content {
+      margin-top: 1vmax;
+    }
+  }
