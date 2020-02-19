@@ -46,6 +46,7 @@
   </div>
 </template>
 // TODO: 字体响应式，媒体查询
+         解决 scss 文件内容无法正常完全生效的问题
 <script>
 export default {
   data() {
