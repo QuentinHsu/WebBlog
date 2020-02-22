@@ -1,18 +1,15 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'      // 引入 VueRouter
-import 'normalize.css/normalize.css'    // 引入 normalize.css
-import '@/assets/font/font.css'         // 字体文件引入
-// import './styles/index.css'
-import router from '@/router/router.js'        // 引入 router.js
-
 import App from './App.vue'
+import router from './router'
+import store from './store'
 import './plugins/element.js'
+import './styles/normalize.css'   // 清除浏览器默认样式
+// import './styles/index.scss'
 
 Vue.config.productionTip = false
-Vue.use(VueRouter)                      // 加载 VueRouter
 
-// 创建和挂载根实例
 new Vue({
   router,
-  render: h => h(App),
+  store,
+  render: h => h(App)
 }).$mount('#app')

@@ -1,4 +1,4 @@
-# web_blog
+# web_blog_0.2
 
 ## Project setup
 ```

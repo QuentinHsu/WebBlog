@@ -1,5 +1,5 @@
 {
-  "name": "web_blog",
+  "name": "web_blog_0.2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,9 +12,9 @@
   "dependencies": {
     "core-js": "^3.6.4",
     "element-ui": "^2.4.5",
-    "normalize.css": "^8.0.1",
     "vue": "^2.6.11",
-    "vue-router": "^3.1.5"
+    "vue-router": "^3.1.5",
+    "vuex": "^3.1.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.2.0",
@@ -28,29 +28,12 @@
     "eslint-plugin-vue": "^6.1.2",
     "husky": "^3.0.9",
     "node-sass": "^4.9.2",
-    "sass-loader": "^7.0.3",
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.2",
     "vue-cli-plugin-commitlint": "^1.0.12",
     "vue-cli-plugin-element": "^1.0.1",
     "vue-template-compiler": "^2.6.11"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/vue-cli-plugin-commitlint/lib/cz"
