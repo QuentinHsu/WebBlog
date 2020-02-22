@@ -10,6 +10,12 @@
  首页 | 移除图片式LOGO | [5cdd3f8](https://github.com/QuentinHsu/WebBlog/commit/5cdd3f8)
 
 
+### 🐛 Bug 修复
+范围|描述|commitId
+--|--|--
+ 全局 | 解决 scss 文件内容无法正常完全生效的问题 | [aefc490](https://github.com/QuentinHsu/WebBlog/commit/aefc490)
+
+
 ### 📝 文档
 范围|描述|commitId
 --|--|--
