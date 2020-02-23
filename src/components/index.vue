@@ -2,44 +2,37 @@
   <div>
     <el-row>
       <el-card class="window" shadow="never">
-        <el-col :span="24" :offset="17">
-          <el-row>
-            <el-col :span="2">
-              首页
-            </el-col>
-            <el-col :span="2">
-              文档
-            </el-col>
-            <el-col :span="2">
-              关于
-            </el-col>
-          </el-row>
-        </el-col>
-        <el-row>
-          <el-col class="logo" :span="24" :offset="1">
-            <!-- <img src="@/assets/logo/LOGO-black.png" alt="logo"> -->
-            <el-row>
-              <el-col :span="6" class="blogMainInfo">
-                <h2>{{blogName}}</h2>
-                <div class="redBottom">
-                  <p>{{aWord}}</p>
-                  <!-- TODO: 添加打字机效果 -->
-                </div>
+        <template style="width:80%">
+          <el-col :span="24"  >
+            <el-row class="header">
+              <el-col :span="2">
+                首页
+              </el-col>
+              <el-col :span="2">
+                文档
+              </el-col>
+              <el-col :span="2">
+                关于
               </el-col>
             </el-row>
           </el-col>
-          <el-col :offset="1" class="content">
-            <template shadow="never">
-              <el-row>
-                <el-col :span="4" class="todayYearNum">
-                  {{dateYear}}
-                </el-col>
-              </el-row>
-            </template>
-          </el-col>
-          
-        </el-row>
-        
+          <el-row>
+            <el-col :span="24" >
+              <!-- 博客简单信息 -->
+              <blog-main-info :blogMainInfo="blogMainInfo"></blog-main-info>
+            </el-col>
+            <el-col class="content">
+              <template shadow="never">
+                <el-row>
+                  <el-col :span="4" class="todayYearNum">
+                    {{dateYear}}
+                  </el-col>
+                </el-row>
+                <blog-article-brief></blog-article-brief>
+              </template>
+            </el-col>
+          </el-row>
+        </template>
       </el-card>
     </el-row>
 
@@ -47,11 +40,19 @@
 </template>
 // TODO: 字体响应式，媒体查询
 <script>
+import blogMainInfo from './blogMainInfo.vue'
+import blogArticleBrief from './blogArticleBrief.vue'
 export default {
+  components: {
+    'blog-main-info': blogMainInfo,
+    'blog-article-brief': blogArticleBrief
+  },
   data() {
     return {
-      blogName: 'KunYunYe',
-      aWord: '人生本就过得不愉快,不如来点罗曼蒂克。',
+      blogMainInfo: {
+        blogName: 'KunYunYe',
+        aWord: '人生本就过得不愉快，不如来点罗曼蒂克。',
+      },
       dateYear: '',
     }
   },
