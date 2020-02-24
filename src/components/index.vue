@@ -3,8 +3,9 @@
     <el-row>
       <el-card class="window" shadow="never">
         <template style="width:80%">
-          <el-col :span="24"  >
-            <el-row class="header">
+          <el-col :span="24">
+            <navigation></navigation>
+            <!-- <el-row class="header">
               <el-col :span="2">
                 首页
               </el-col>
@@ -14,7 +15,7 @@
               <el-col :span="2">
                 关于
               </el-col>
-            </el-row>
+            </el-row> -->
           </el-col>
           <el-row>
             <el-col :span="24" >
@@ -40,10 +41,12 @@
 </template>
 // TODO: 字体响应式，媒体查询
 <script>
+import navigation from './navigation.vue'
 import blogMainInfo from './blogMainInfo.vue'
 import blogArticleBrief from './blogArticleBrief.vue'
 export default {
   components: {
+    'navigation': navigation,
     'blog-main-info': blogMainInfo,
     'blog-article-brief': blogArticleBrief
   },

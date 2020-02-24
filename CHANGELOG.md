@@ -1,4 +1,4 @@
-# 0.1.0 (2020-02-23)
+# 0.1.0 (2020-02-24)
 
 ### 🌟 新功能
 范围|描述|commitId
@@ -27,6 +27,7 @@
 范围|描述|commitId
 --|--|--
  index | 仅生效部分拆分 scss 样式 | [c71c55b](https://github.com/QuentinHsu/WebBlog/commit/c71c55b)
+ 全局 | 拆分组件，调整基础样式 | [612c71b](https://github.com/QuentinHsu/WebBlog/commit/612c71b)
 
 
 范围|描述|commitId
