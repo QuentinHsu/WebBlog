@@ -5,17 +5,6 @@
         <template style="width:80%">
           <el-col :span="24">
             <navigation></navigation>
-            <!-- <el-row class="header">
-              <el-col :span="2">
-                首页
-              </el-col>
-              <el-col :span="2">
-                文档
-              </el-col>
-              <el-col :span="2">
-                关于
-              </el-col>
-            </el-row> -->
           </el-col>
           <el-row>
             <el-col :span="24" >
@@ -56,25 +45,9 @@ export default {
         blogName: 'KunYunYe',
         aWord: '人生本就过得不愉快，不如来点罗曼蒂克。',
       },
-      dateYear: '',
+      dateYear: new Date().getFullYear(),
     }
   },
-  computed: {
-    // yearNum: function() {
-    //   let d = new Date()
-    //   return this.dateYear = d.getFullYear()
-    //   // console.log(this.dateYear)
-    // }
-  },
-  methods: {
-    yearNum() {
-      let d = new Date()
-      this.dateYear = d.getFullYear()
-    }
-  },
-  mounted() {
-    this.yearNum()
-  }
 }
 </script>
 
