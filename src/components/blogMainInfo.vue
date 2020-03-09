@@ -17,7 +17,7 @@
 export default {
     props: {
         blogMainInfo: {
-            type: String
+            type: Object
         }
     }
 

@@ -5,23 +5,8 @@
         <template style="width:80%">
           <el-col :span="24">
             <navigation></navigation>
+            <router-view></router-view>
           </el-col>
-          <el-row>
-            <el-col :span="24" >
-              <!-- 博客简单信息 -->
-              <blog-main-info :blogMainInfo="blogMainInfo"></blog-main-info>
-            </el-col>
-            <el-col class="content">
-              <template shadow="never">
-                <el-row>
-                  <el-col :span="4" class="todayYearNum">
-                    {{dateYear}}
-                  </el-col>
-                </el-row>
-                <blog-article-brief></blog-article-brief>
-              </template>
-            </el-col>
-          </el-row>
         </template>
       </el-card>
     </el-row>
@@ -31,13 +16,9 @@
 // TODO: 字体响应式，媒体查询
 <script>
 import navigation from './navigation.vue'
-import blogMainInfo from './blogMainInfo.vue'
-import blogArticleBrief from './blogArticleBrief.vue'
 export default {
   components: {
     'navigation': navigation,
-    'blog-main-info': blogMainInfo,
-    'blog-article-brief': blogArticleBrief
   },
   data() {
     return {
