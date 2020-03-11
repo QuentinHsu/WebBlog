@@ -5,10 +5,10 @@
             <!-- 首页 -->
         </el-col>
         <el-col :span="2">
-            <router-link :to="{name: 'Home'}">文档</router-link>
+            <router-link :to="{name: 'home'}">文档</router-link>
         </el-col>
         <el-col :span="2">
-            关于
+            <router-link :to="{name: 'about'}">关于</router-link>
         </el-col>
         <!-- <router-view></router-view> -->
     </el-row>
@@ -24,6 +24,23 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
+</style>
+
+<style lang="scss">
+@import '@/styles/variableList';
+@media (prefers-color-scheme: dark) {
+    .header {
+        background: $mainBackgroundColor_dark;
+        /** color: rgb(255, 255, 255); */
+
+        /**  清除 <a> <router-link> 等链接的默认样式  */
+        a {
+            text-decoration: none;
+            color:$textFontColor_dark;
+        }
+    }
+}
 
 </style>

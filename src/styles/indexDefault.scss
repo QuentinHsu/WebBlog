@@ -1,3 +1,9 @@
+/**
+  为方便日后维护管理
+  该文件作为整体布局，组件和组件之间的样式表
+  禁止写入组件内的样式表内容
+
+*/
 .window {
     margin: 0 auto;
     padding: 0 5vmax;
@@ -20,7 +26,7 @@
           border-bottom-style: solid;
           border-width: 0.3vmax;
         .aWord {
-          color: black;
+          // color: black;
           margin-top: -0.5vmax;
           font-size: 1.5vmax;
         }

@@ -37,6 +37,7 @@ data(){
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '@/styles/variableList';
 
 </style>

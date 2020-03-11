@@ -1,4 +1,4 @@
-# 0.1.0 (2020-03-09)
+# 0.1.0 (2020-03-11)
 
 ### 🌟 新功能
 范围|描述|commitId
@@ -30,6 +30,12 @@
  index | 仅生效部分拆分 scss 样式 | [c71c55b](https://github.com/QuentinHsu/WebBlog/commit/c71c55b)
  全局 | 拆分组件，调整基础样式 | [612c71b](https://github.com/QuentinHsu/WebBlog/commit/612c71b)
  首页 | 拆分组件 | [58b2941](https://github.com/QuentinHsu/WebBlog/commit/58b2941)
+
+
+### 🚀 性能优化
+范围|描述|commitId
+--|--|--
+ 全局 | 优化首页显示组件的规划逻辑 | [d6c4c7b](https://github.com/QuentinHsu/WebBlog/commit/d6c4c7b)
 
 
 范围|描述|commitId

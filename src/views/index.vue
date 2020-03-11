@@ -1,7 +1,7 @@
 <template>
   <div>
-    <el-row>
-      <el-card class="window" shadow="never">
+    <el-row class="window">
+      <el-card>
         <template style="width:80%">
           <el-col :span="24">
             <navigation></navigation>
@@ -15,7 +15,7 @@
 </template>
 // TODO: 字体响应式，媒体查询
 <script>
-import navigation from './navigation.vue'
+import navigation from '@/components/navigation.vue'
 export default {
   components: {
     'navigation': navigation,
@@ -33,5 +33,24 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../styles/index.scss';
+@import '@/styles/variableList';
+
+
+</style>
+
+<style lang="scss">
+@import '@/styles/variableList';
+
+@media (prefers-color-scheme: dark) {
+  .window > .el-card {
+    background:$mainBackgroundColor_dark !important;
+    border: $mainBackgroundColor_dark !important;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .window > .el-card {
+    background:$mainBackgroundColor_dark !important;
+    border: $mainBackgroundColor_dark !important;
+  }
+}
 </style>
