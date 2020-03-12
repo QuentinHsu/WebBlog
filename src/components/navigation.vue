@@ -24,8 +24,10 @@ export default {
 }
 </script>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+a {
+    text-decoration: none;
+}
 </style>
 
 <style lang="scss">
@@ -33,14 +35,19 @@ export default {
 @media (prefers-color-scheme: dark) {
     .header {
         background: $mainBackgroundColor_dark;
-        /** color: rgb(255, 255, 255); */
-
         /**  清除 <a> <router-link> 等链接的默认样式  */
         a {
-            text-decoration: none;
             color:$textFontColor_dark;
         }
     }
 }
-
+@media (prefers-color-scheme: light) {
+    .header {
+        background: $mainBackgroundColor_light;
+        /**  清除 <a> <router-link> 等链接的默认样式  */
+        a {
+            color:$textFontColor_light;
+        }
+    }
+}
 </style>

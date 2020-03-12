@@ -49,8 +49,8 @@ export default {
 }
 @media (prefers-color-scheme: light) {
   .window > .el-card {
-    background:$mainBackgroundColor_dark !important;
-    border: $mainBackgroundColor_dark !important;
+    background:$mainBackgroundColor_light !important;
+    border: $mainBackgroundColor_light !important;
   }
 }
 </style>

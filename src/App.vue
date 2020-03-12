@@ -19,12 +19,21 @@ export default {
   /* text-align: center; */
   /* color: #000000; */
   /* font-size: 2em; */
-  background: $fullBackgroundColor_dark;
+  // background: $fullBackgroundColor_dark;
 }
-/* 清除 <a> <router-link> 等链接的默认样式  */
-a {
-  text-decoration: none;
-  color:#333;
-}
+</style>
+<style lang="scss">
+@import '@/styles/variableList';
+@media (prefers-color-scheme: dark) {
+  #app {
+    background: $fullBackgroundColor_dark;
 
+  }
+}
+@media (prefers-color-scheme: light) {
+  #app {
+    background: $fullBackgroundColor_light;
+
+  }
+}
 </style>

@@ -71,7 +71,16 @@ export default {
             color: $textFontColor_dark;
         }
     }
+}
+@media (prefers-color-scheme: light) {
+    .blogMainInfo {
+        background: $mainBackgroundColor_light;
+        .blogName {
+            color: $textFontColor_light;
+        }
+        .aWord {
+            color: $textFontColor_light;
+        }
     }
-    
-
+}
 </style>

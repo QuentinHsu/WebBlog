@@ -41,3 +41,8 @@ data(){
 @import '@/styles/variableList';
 
 </style>
+
+<style lang="scss">
+@import '@/styles/variableList';
+
+</style>

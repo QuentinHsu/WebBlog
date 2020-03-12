@@ -1,8 +1,9 @@
-# 0.1.0 (2020-03-11)
+# 0.1.0 (2020-03-12)
 
 ### 🌟 新功能
 范围|描述|commitId
 --|--|--
+ Global | add Dark Mode | [cafe781](https://github.com/QuentinHsu/WebBlog/commit/cafe781)
  index | 引入特定字体 | [5e8ed00](https://github.com/QuentinHsu/WebBlog/commit/5e8ed00)
  index.vue | 添加头像模块（但只是demo，没想好如何更恰当 | [ccd6496](https://github.com/QuentinHsu/WebBlog/commit/ccd6496)
  全局 | 拆分样式文件，模块化 | [cf3bbde](https://github.com/QuentinHsu/WebBlog/commit/cf3bbde)
