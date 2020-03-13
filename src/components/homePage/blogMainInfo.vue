@@ -1,8 +1,8 @@
 <template>
     <div>
         <el-row>
-            <el-col :span="6" class="blogMainInfo">
-                <p class="blogName">{{blogMainInfo.blogName}}</p>
+            <el-col :span="24" class="blogMainInfo">
+                <h1 class="blogName">{{blogMainInfo.blogName}}</h1>
                 <!-- TODO：又想打算改成头像  纠结 -->
                 <div class="redBottom">
                     <p class="aWord">{{blogMainInfo.aWord}}</p>
@@ -26,6 +26,27 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/styles/variableList';
+.blogName, .redBottom ,.aWord {
+    text-align: center;
+}
+.blogMainInfo {
+    .blogName {
+        font-size: 4vmax;
+        margin: 2vmax auto;
+    }
+    .redBottom {
+        width: 80%;
+        margin: 0 auto 0;
+        border-color: red;
+        border-bottom-style: solid;
+        border-width: 0.3vmax;
+        .aWord {
+            margin: -0.5vmax auto 1vmax;
+            font-size: 1.5vmax;
+        }
+    }
+}
+
 /**  禁止选中文本 */
     .blogName ,.aWord {
         -webkit-touch-callout: none;    /* iOS Safari */
@@ -45,7 +66,7 @@ export default {
         50% { border-right-color: rgba(255, 255, 255, 0); } /** 光标闪烁 */
     }
     .aWord {
-        width: 31.5ch; /** 文本宽度 */
+        width: 31.5ch;      /** 文本宽度 */
         white-space: nowrap;
         overflow: hidden;
         border-right: .05em solid;

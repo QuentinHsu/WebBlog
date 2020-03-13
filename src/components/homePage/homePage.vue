@@ -5,40 +5,49 @@
             <blog-main-info :blogMainInfo="blogMainInfo"></blog-main-info>
         </el-col>
         <el-col class="content">
-            <template shadow="never">
             <el-row>
-                <el-col :span="4" class="todayYearNum">
-                {{dateYear}}
+                <el-col :span="12" class="todayNum">
+                <!-- {{dateYear}} -->
+                {{dateTime}}
+                </el-col>
+                <el-col>
+                    <blog-article-list :articleList="articleList"></blog-article-list>
                 </el-col>
             </el-row>
-            <blog-article-brief></blog-article-brief>
-            </template>
+        </el-col>
+        <el-col>
         </el-col>
     </el-row>
 </template>
 
 <script>
 import blogMainInfo from './blogMainInfo.vue'
-import blogArticleBrief from './blogArticleBrief.vue'
+import articleList from './articleList.vue'
 export default {
 components: {
     'blog-main-info': blogMainInfo,
-    'blog-article-brief': blogArticleBrief
+    'blog-article-list': articleList
 },
 data(){
     return{
         blogMainInfo: {
-        blogName: 'KunYunYe',
-        aWord: '人生本就过得不愉快，不如来点罗曼蒂克。',
+            blogName: 'KunYunYe',
+            aWord: '人生本就过得不愉快，不如来点罗曼蒂克。',
         },
         dateYear: new Date().getFullYear(),
+        dateTime: new Date().toDateString(),
+        articleList: {
+            coverPicture: '',       // 封面
+            arctleTitle: ''         // 文章标题
+        }
     }
 }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '@/styles/variableList';
+
 
 </style>
 

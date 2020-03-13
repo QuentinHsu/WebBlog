@@ -4,7 +4,6 @@ import router from './router'
 import store from './store'
 import './plugins/element.js'
 import './styles/normalize.css'   // 清除浏览器默认样式
-// import './styles/index.scss'
 
 Vue.config.productionTip = false
 
