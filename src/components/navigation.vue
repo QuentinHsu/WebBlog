@@ -31,7 +31,6 @@ a {
 </style>
 
 <style lang="scss">
-@import '@/styles/variableList';
 @media (prefers-color-scheme: dark) {
     .header {
         background: $mainBackgroundColor_dark;

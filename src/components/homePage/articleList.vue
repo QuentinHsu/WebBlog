@@ -23,7 +23,6 @@ export default {
 </style>
 
 <style lang="scss">
-@import '@/styles/variableList';
 @media (prefers-color-scheme: dark) {
     .articleListTitle {
         color: $textFontColor_dark;

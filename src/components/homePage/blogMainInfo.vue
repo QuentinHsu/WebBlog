@@ -81,7 +81,7 @@ export default {
 </style>
 
 <style lang="scss">
-@import '@/styles/variableList';
+// @import '@/styles/variableList';
 @media (prefers-color-scheme: dark) {
     .blogMainInfo {
         background: $mainBackgroundColor_dark;

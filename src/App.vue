@@ -23,7 +23,6 @@ export default {
 }
 </style>
 <style lang="scss">
-@import '@/styles/variableList';
 @media (prefers-color-scheme: dark) {
   #app {
     background: $fullBackgroundColor_dark;

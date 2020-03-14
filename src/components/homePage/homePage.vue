@@ -46,12 +46,10 @@ data(){
 </script>
 
 <style lang="scss" scoped>
-@import '@/styles/variableList';
 
 
 </style>
 
 <style lang="scss">
-@import '@/styles/variableList';
 
 </style>

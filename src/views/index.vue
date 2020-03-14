@@ -33,14 +33,11 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/styles/variableList';
 
 
 </style>
 
 <style lang="scss">
-@import '@/styles/variableList';
-
 @media (prefers-color-scheme: dark) {
   .window > .el-card {
     background:$mainBackgroundColor_dark !important;
