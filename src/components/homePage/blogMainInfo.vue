@@ -3,10 +3,8 @@
         <el-row>
             <el-col :span="24" class="blogMainInfo">
                 <h1 class="blogName">{{blogMainInfo.blogName}}</h1>
-                <!-- TODO：又想打算改成头像  纠结 -->
                 <div class="redBottom">
                     <p class="aWord">{{blogMainInfo.aWord}}</p>
-                    <!-- TODO: 添加打字机效果 -->
                 </div>
             </el-col>
         </el-row>
