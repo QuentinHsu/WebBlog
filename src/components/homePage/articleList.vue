@@ -1,31 +1,28 @@
 <template>
-    <el-row class="articleCard">
-        <h2 class="articleListTitle">往日细语</h2>
+    <el-row class="articleCardGroup">
+        <h2 class="articleCardGroupTitle">往日细语</h2>
         <el-col :span="24">
             <div v-for="(articleInfo, index) in articleList" :key="index">
-                <el-card  class="articleList">
+                <el-card class="articleCardInfo">
                     <el-col :span="12" >
-                        <div class="articleInfoText">
+                        <div class="articleCardInfoText">
                             <h3>{{articleInfo.articleTitle}}</h3>
-                            <q>{{articleInfo.articleOverview}}</q>
+                            <p>{{articleInfo.articleOverview}}</p>
                         </div>
                     </el-col>
                     <el-col :span="12">
                         <template>
                             <el-image
-                                alt="articleCoverPicture"
-                                style="height: 100%"
+                                alt="articleCardCoverPicture"
+                                style="eight: 100%;"
                                 :src="articleInfo.articleCoverPicture"
                                 fit="cover">
                             </el-image>
                         </template>
                     </el-col>
                 </el-card>
-                <div class="articleCardFooter">
-
-                </div>
+                <div class="articleCardFooter"></div>
             </div>
-            
         </el-col>
     </el-row>
 </template>
@@ -42,24 +39,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.articleCard {
-    .articleList {
+.articleCardGroup {
+    .articleCardInfo {
         height: 10vmax;
-        .articleInfoText {
+        .articleCardInfoText {
             margin: auto 1vmax;
-            background: red($color: #000000);
+            p {
+                font-size: 80%;
+            }
         }
-        .articleCoverPicture {
-            // float: right;
-            height: 100%;
-            margin: auto;
-        }
+
     }
-    .articleCardFooter {
-        margin: 0.5vmax auto 1vmax;
-        width: 10%;
-        border-bottom: 0.1vmax solid rgb(255, 255, 255);
-    }
+    // .articleCardFooter {
+    //     margin: 0.5vmax auto 1vmax;
+    //     width: 10%;
+    //     border-bottom: 0.1vmax solid rgb(255, 255, 255);
+    // }
 
 }
 // .articleCardFooter {
@@ -71,20 +66,36 @@ export default {
 
 <style lang="scss">
 @media (prefers-color-scheme: dark) {
-    .articleListTitle {
-        color: $textFontColor_dark;
+    .articleCardGroup {
+        .articleCardGroupTitle {
+            color: $textFontColor_dark;
+        }
+        .articleCardInfo {
+            color: $textFontColor_dark;
+
+        }
+        .articleCardFooter {
+            margin: 0.5vmax auto 1vmax;
+            width: 10%;
+            border-bottom: 0.1vmax solid rgb(149, 149, 149);
+        }
+        .articleCardFooter {
+            -moz-box-shadow:0px 1px 9px rgba(255, 255, 255, 0.691);
+            -webkit-box-shadow:0px 1px 9px rgba(255, 255, 255, 0.616);
+            box-shadow:0px 1px 9px rgba(255, 255, 255, 0.609);
+        }
+        .el-card {
+            border: 0px!important;
+            background-color: #222!important;
+        }
+        .el-card__body {
+            padding: 0px!important;
+        }
     }
 }
 @media (prefers-color-scheme: light) {
     
 }
-.articleCard {
-    .el-card {
-        border: 0px!important;
-    }
-    .el-card__body {
-        padding: 0px!important;
-    }
-}
+
 
 </style>

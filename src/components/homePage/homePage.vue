@@ -49,6 +49,54 @@ export default {
                     articleTitle: '第一张',       // 文章标题
                     articleOverview: '我也不知道写了些什么'     // 文章梗概
                 },
+                {
+                    // articleCoverPicture: require('https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg'),       // 博客封面
+                    articleCoverPicture: 'https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg',
+                    articleTitle: '第一张',       // 文章标题
+                    articleOverview: '我也不知道写了些什么'     // 文章梗概
+                },
+                {
+                    // articleCoverPicture: require('https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg'),       // 博客封面
+                    articleCoverPicture: 'https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg',
+                    articleTitle: '第一张',       // 文章标题
+                    articleOverview: '我也不知道写了些什么'     // 文章梗概
+                },
+                {
+                    // articleCoverPicture: require('https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg'),       // 博客封面
+                    articleCoverPicture: 'https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg',
+                    articleTitle: '第一张',       // 文章标题
+                    articleOverview: '我也不知道写了些什么'     // 文章梗概
+                },
+                {
+                    // articleCoverPicture: require('https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg'),       // 博客封面
+                    articleCoverPicture: 'https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg',
+                    articleTitle: '第一张',       // 文章标题
+                    articleOverview: '我也不知道写了些什么'     // 文章梗概
+                },
+                {
+                    // articleCoverPicture: require('https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg'),       // 博客封面
+                    articleCoverPicture: 'https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg',
+                    articleTitle: '第一张',       // 文章标题
+                    articleOverview: '我也不知道写了些什么'     // 文章梗概
+                },
+                {
+                    // articleCoverPicture: require('https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg'),       // 博客封面
+                    articleCoverPicture: 'https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg',
+                    articleTitle: '第一张',       // 文章标题
+                    articleOverview: '我也不知道写了些什么'     // 文章梗概
+                },
+                {
+                    // articleCoverPicture: require('https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg'),       // 博客封面
+                    articleCoverPicture: 'https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg',
+                    articleTitle: '第一张',       // 文章标题
+                    articleOverview: '我也不知道写了些什么'     // 文章梗概
+                },
+                {
+                    // articleCoverPicture: require('https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg'),       // 博客封面
+                    articleCoverPicture: 'https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg',
+                    articleTitle: '第一张',       // 文章标题
+                    articleOverview: '我也不知道写了些什么'     // 文章梗概
+                }
             ]
         }
     }
@@ -56,6 +104,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.content {
+    .todayNum {
+        color: $textFontColor_dark;
+        font-size: 80%;
+    }
+}
 
 
 </style>
