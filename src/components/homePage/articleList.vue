@@ -50,17 +50,7 @@ export default {
         }
 
     }
-    // .articleCardFooter {
-    //     margin: 0.5vmax auto 1vmax;
-    //     width: 10%;
-    //     border-bottom: 0.1vmax solid rgb(255, 255, 255);
-    // }
-
 }
-// .articleCardFooter {
-//         width: 10%;
-//         border-bottom: 3vmax solid rgba(255, 250, 250, 0.2);
-//     }
 
 </style>
 
