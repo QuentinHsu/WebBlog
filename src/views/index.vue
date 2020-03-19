@@ -6,6 +6,7 @@
           <el-col :span="24">
             <navigation></navigation>
             <router-view></router-view>
+            <default-footer></default-footer>
           </el-col>
         </template>
       </el-card>
@@ -16,9 +17,11 @@
 // TODO: 字体响应式，媒体查询
 <script>
 import navigation from '@/components/navigation.vue'
+import footer from '@/components/footer.vue'
 export default {
   components: {
     'navigation': navigation,
+    'default-footer': footer,
   },
   data() {
     return {
