@@ -1,0 +1,14 @@
+// 禁止选择文本
+.noSelectText {
+    -webkit-touch-callout: none;    /* iOS Safari */
+    -webkit-user-select: none;      /* Chrome/Safari/Opera */
+    -khtml-user-select: none;       /* Konqueror */
+    -moz-user-select: none;         /* Firefox */
+    -ms-user-select: none;          /* Internet Explorer/Edge */
+    user-select: none;              /* Non-prefixed version, currently not supported by any browser */
+}
+
+// 去除链接默认样式
+.removeLinkUnderline {
+    text-decoration: none;
+}
