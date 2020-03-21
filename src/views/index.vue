@@ -4,7 +4,7 @@
       <el-card>
         <el-col :span="24">
           <default-header></default-header>
-          <router-view style="min-height: 80vh"></router-view>
+          <router-view class="contentView"></router-view>
           <default-footer></default-footer>
         </el-col>
       </el-card>
@@ -41,6 +41,9 @@ export default {
   .window > .el-card {
     background:$mainBackgroundColor_dark !important;
     border: $mainBackgroundColor_dark !important;
+  }
+  .window > .el-card > .el-card__body {
+    padding: 2vw!important;
   }
 }
 @media (prefers-color-scheme: light) {

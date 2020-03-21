@@ -1,5 +1,5 @@
 <template>
-    <el-row class="header">
+    <el-row class="header" :class=" headerFixed?'isFixed':'' ">
         <el-col :span="3">
             <router-link :to="{name:'homePage'}">首页</router-link>
             <!-- 首页 -->
@@ -18,14 +18,46 @@
 export default {
     data() {
         return{
-
+            headerFixed: '',
         }
+    },
+    methods: {
+        handleScroll() {
+        // 得到页面滚动的距离
+        let scrollTop =
+            window.pageYOffset ||
+            document.documentElement.scrollTop ||
+            document.body.scrollTop;
+            //  当滚动超过 180 时，实现吸顶效果
+        if (scrollTop > 180) {
+            this.headerFixed = true;
+        } else {
+            this.headerFixed = false;
+        }
+        }
+    },
+    mounted() {
+        // handleScroll 为页面滚动的监听回调
+        window.addEventListener("scroll", this.handleScroll);
+    },
+    destroyed() {
+        //同时在 destroyed 回调中移除监听：
+        window.removeEventListener("scroll", this.handleScroll);
     }
 }
 </script>
 
 <style lang="scss" scoped>
-
+//  导航栏吸顶
+.isFixed {
+    width: 61vw;
+    height: 8vh;
+    line-height: 8vh;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+//  /导航栏吸顶
 </style>
 
 <style lang="scss">
