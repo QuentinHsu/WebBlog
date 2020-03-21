@@ -14,6 +14,7 @@ export default {
 <style lang="scss">
 @import '@/styles/index.scss';
 #app {
+  min-height: 100vh;
   font-family: 'SourceHanSerif','MFYanSong','Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

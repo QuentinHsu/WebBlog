@@ -1,5 +1,5 @@
 <template>
-    <el-row>
+    <el-row class="footer">
         <el-col>
             <footer :span="24" class="footerInfo noSelectText">
                 <div>Designed By Quentin Hsu</div>
@@ -21,17 +21,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-.footerInfo {
-    font-size: 0.5vw;
-    margin: 10px auto;
-    text-align: center;
-    div {
-        margin-bottom: 0.2vw;
-        img {
-            width: 1.2vw;
-        }
-    }
-}
+
 </style>
 
 <style lang="scss">

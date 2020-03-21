@@ -2,25 +2,22 @@
   <div>
     <el-row class="window">
       <el-card>
-        <template style="width:80%">
-          <el-col :span="24">
-            <navigation></navigation>
-            <router-view></router-view>
-            <default-footer></default-footer>
-          </el-col>
-        </template>
+        <el-col :span="24">
+          <default-header></default-header>
+          <router-view style="min-height: 80vh"></router-view>
+          <default-footer></default-footer>
+        </el-col>
       </el-card>
     </el-row>
-
   </div>
 </template>
 // TODO: 字体响应式，媒体查询
 <script>
-import navigation from '@/components/navigation.vue'
+import header from '@/components/header.vue'
 import footer from '@/components/footer.vue'
 export default {
   components: {
-    'navigation': navigation,
+    'default-header': header,
     'default-footer': footer,
   },
   data() {
@@ -36,7 +33,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 
 </style>
 
