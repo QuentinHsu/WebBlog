@@ -50,7 +50,7 @@ export default {
 <style lang="scss" scoped>
 //  导航栏吸顶
 .isFixed {
-    width: 61vw;
+    width: 63vw;
     height: 8vh;
     line-height: 8vh;
     position: fixed;
