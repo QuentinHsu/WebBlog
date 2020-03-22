@@ -7,7 +7,7 @@
     margin: 0 auto;
     width: 65vw;
     color: black;
-    .header {
+    .headerPage {
         min-height: 4vh;
         font-size: 4vh;
         line-height: 4vh;
@@ -16,7 +16,7 @@
         }
     }
     .contentView {
-        min-height: 80vh;
+        min-height: 85vh;
         .content {
             margin: 1vh auto 1vh;
         }
@@ -25,12 +25,12 @@
         min-height: 12vh;
         .footerInfo {
             font-size: 0.5vw;
-            margin: 10px auto;
+            margin:3.05vh auto;
             text-align: center;
             div {
-                margin-bottom: 0.2vw;
+                margin-bottom: 0.8vh;
                 img {
-                    width: 1.2vw;
+                    height: 2.5vh;
                 }
             }
         }

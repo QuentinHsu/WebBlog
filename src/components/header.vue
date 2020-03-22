@@ -1,11 +1,11 @@
 <template>
-    <el-row class="header" :class=" headerFixed?'isFixed':'' ">
+    <el-row class="headerPage" :class=" headerFixed?'isFixed':'' ">
         <el-col :span="3">
             <router-link :to="{name:'homePage'}">首页</router-link>
             <!-- 首页 -->
         </el-col>
         <el-col :span="3">
-            <router-link :to="{name: 'home'}">文档</router-link>
+            <router-link :to="{name: 'document'}">文档</router-link>
         </el-col>
         <el-col :span="3">
             <router-link :to="{name: 'about'}">关于</router-link>
@@ -62,7 +62,7 @@ export default {
 
 <style lang="scss">
 @media (prefers-color-scheme: dark) {
-    .header {
+    .headerPage {
         background: $mainBackgroundColor_dark;
         /**  清除 <a> <router-link> 等链接的默认样式颜色  */
         a {
@@ -71,7 +71,7 @@ export default {
     }
 }
 @media (prefers-color-scheme: light) {
-    .header {
+    .headerPage {
         background: $mainBackgroundColor_light;
         /**  清除 <a> <router-link> 等链接的默认样式颜色  */
         a {
