@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>inspiration.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <base target="_blank" />  <!-- 为所有原生<a>标签 添加 ' target='_blank' ' 属性 , vue-router 不再此范畴（不受影响）-->
   </head>
   <body>
     <noscript>
