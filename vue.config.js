@@ -11,7 +11,7 @@ module.exports = {
 	},
 	devServer: {
         open: true,                                 // 是否自动打开浏览器并进入前端默认页面
-        host: '127.0.0.1',                          // 指定 hostName
+        host: '0.0.0.0',                            // 指定 hostName，指定为 0.0.0.0，能生成 本地IP+端口，以及 局域网IP+端口。否则将都是 同一个 hostName+端口
         port: 8081,                                 // 指定端口号
 		proxy: {
             '/apis': {
