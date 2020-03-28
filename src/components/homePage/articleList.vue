@@ -2,19 +2,19 @@
     <el-row class="articleCardGroup">
         <h2 class="articleCardGroupTitle">往日细语</h2>
         <el-col :span="24">
-            <div v-for="(articleInfo, index) in articleList" :key="index">
+            <div v-for="(articleInfo, index) in articleList" :key="index" @click="selectItem(articleInfo.id)" >
                 <el-card class="articleCardInfo">
                     <el-row>
                         <el-col :span="12" >
                             <el-row class="articleCardInfoText">
                                 <el-col :span="24">
-                                    <div class="articleTitle">{{articleInfo.articleTitle}}</div>
+                                        <div class="articleTitle">{{articleInfo.articleTitle}}</div>
                                 </el-col>
                                 <el-col :span="24" style="height: 3vw">
                                     <div class="articleOverview">{{articleInfo.articleOverview}}</div>
                                 </el-col>
-                                <div class="articleCreateTime">
-                                    {{articleInfo.createTime}}
+                                <div class="articleCreateTime noSelectText">
+                                    <format-date :date="articleInfo.articleCreateTime"></format-date>
                                 </div>
                             </el-row>
                         </el-col>
@@ -23,7 +23,7 @@
                             <template>
                                 <el-image
                                     alt="articleCardCoverPicture"
-                                    :src="articleInfo.articleCoverPicture"
+                                    :src="articleInfo.articleCardCoverPicture"
                                     fit="contain">
                                 </el-image>
                             </template>
@@ -43,8 +43,19 @@ export default {
         articleList: {
             type: Array
         }
-    }
+    },
+    computed: {
 
+    },
+    methods: {
+        selectItem(res) {
+            const id = res
+            this.$router.push({
+                name: 'document',
+                params: {id}
+            })
+        }
+    },
 }
 </script>
 
