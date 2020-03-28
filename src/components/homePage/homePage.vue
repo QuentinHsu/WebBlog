@@ -36,42 +36,41 @@ export default {
             },
             dateYear: new Date().getFullYear(),
             dateTime: new Date().toDateString(),
-            articleList: [
-                {
-                    articleCoverPicture: 'https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg',
-                    articleTitle: '第一张第一张第一张第一张第一张第一张第一张',       // 文章标题
-                    articleOverview: '我也不知道写了些什么我也不知道写了些什么我也不知道写了些什么我也不知道写了些什么我也不知道写了些什么我也不知道写了些什么我也不知道写了些什么我也不知道写了些什么我也不知道写了些什么我也不知道写了些什么',     // 文章梗概
-                    createTime: '2020-01-01'
-                },
-                {
-                    articleCoverPicture: 'https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg',
-                    articleTitle: '第一张',       // 文章标题
-                    articleOverview: '我也不知道写了些什么我也不知道写了些什么我也不知道写了些什么我也不知道写了些什么我也不知道写了些什么我也不知道写了些什么我也不知道写了些什么我也不知道写了些什么我也不知道写了些什么我也不知道写了些什么',     // 文章梗概
-                    createTime: '2020-01-01'
-                },
-                {
-                    articleCoverPicture: 'https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg',
-                    articleTitle: '第一张',       // 文章标题
-                    articleOverview: '我也不知道写了些什么'     // 文章梗概
-                },
-                {
-                    articleCoverPicture: 'https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg',
-                    articleTitle: '第一张',       // 文章标题
-                    articleOverview: '我也不知道写了些什么'     // 文章梗概
-                },
-                {
-                    articleCoverPicture: 'https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg',
-                    articleTitle: '第一张',       // 文章标题
-                    articleOverview: '我也不知道写了些什么'     // 文章梗概
-                },
-                {
-                    articleCoverPicture: 'https://wx4.sinaimg.cn/large/ebde65begy1gbesoywaurj215o0rxtf6.jpg',
-                    articleTitle: '第一张',       // 文章标题
-                    articleOverview: '我也不知道写了些什么'     // 文章梗概
-                },
-
-            ]
+            articleList:[
+                // {
+                //     articleCardCoverPicture: '',             // 文章封面
+                //     articleTitle: '',                        // 文章标题
+                //     articleOverview: '',                     // 文章梗概
+                //     articleCreateTime: ''                    // 文章创建时间
+                // }
+            ],
         }
+    },
+    methods: {
+        getArticleList() {
+            this.$axios ({
+                methods: 'get',
+                url: '/apis/api/content/posts',
+                params: {
+                }
+            }).then( res => {
+                this.articleList = res.data.data.content
+                this.articleList.forEach(item => {
+                    item.articleCardCoverPicture = item.thumbnail
+                    item.articleTitle = item.title
+                    item.articleOverview = item.summary
+                    item.articleCreateTime = item.createTime
+                    delete item.thumbnail
+                    delete item.title
+                    delete item.summary
+                    delete item.createTime
+                })
+                console.log( this.articleList )
+            })
+        },
+    },
+    created() {
+        this.getArticleList()
     }
 }
 </script>
