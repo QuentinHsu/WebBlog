@@ -1,6 +1,5 @@
 <template>
     <el-row class="articleCardGroup">
-        <h2 class="articleCardGroupTitle">往日细语</h2>
         <el-col :span="24">
             <div v-for="(articleInfo, index) in articleList" :key="index" @click="selectItem(articleInfo.id)" >
                 <el-card class="articleCardInfo">
@@ -18,7 +17,6 @@
                                 </div>
                             </el-row>
                         </el-col>
-
                         <el-col :span="12">
                             <template>
                                 <el-image
@@ -51,7 +49,7 @@ export default {
         selectItem(res) {
             const id = res
             this.$router.push({
-                name: 'document',
+                name: 'documentPage',
                 params: {id}
             })
         }
@@ -98,9 +96,9 @@ export default {
             }
         }
     }
-    .articleCardFooter {
+    // .articleCardFooter {
 
-    }
+    // }
 }
 
 </style>
@@ -108,9 +106,6 @@ export default {
 <style lang="scss">
 @media (prefers-color-scheme: dark) {
     .articleCardGroup {
-        .articleCardGroupTitle {
-            color: $textFontColor_dark;
-        }
         .articleCardInfo {
             color: $textFontColor_dark;
         }
@@ -135,9 +130,6 @@ export default {
 }
 @media (prefers-color-scheme: light) {
     .articleCardGroup {
-        .articleCardGroupTitle {
-            color: $textFontColor_light;
-        }
         .articleCardInfo {
             color: $textFontColor_light;
         }
@@ -160,6 +152,5 @@ export default {
         }
     }
 }
-
 
 </style>
