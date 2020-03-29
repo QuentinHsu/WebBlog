@@ -7,8 +7,8 @@
         <el-col class="content">
             <el-row>
                 <el-col :span="12" class="todayNum">
-                <!-- {{dateYear}} -->
-                {{dateTime}}
+                    <!-- {{dateYear}} -->
+                    {{dateTime}}
                 </el-col>
                 <el-col>
                     <h2 class="articleCardGroupTitle">往日细语</h2>
@@ -82,8 +82,9 @@ export default {
 }
 .content {
     .todayNum {
+        margin-top: 1vh;
         color: $textFontColor_dark;
-        font-size: 80%;
+        font-size: 100%;
     }
 }
 

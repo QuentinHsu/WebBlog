@@ -120,7 +120,6 @@ export default {
 @media (prefers-color-scheme: dark) {
     .currentArticleTitle {
         color: $textFontColor_dark;
-        
     }
     .articleTime {
         color: $textFontColor_dark;
