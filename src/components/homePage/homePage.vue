@@ -11,6 +11,7 @@
                 {{dateTime}}
                 </el-col>
                 <el-col>
+                    <h2 class="articleCardGroupTitle">往日细语</h2>
                     <blog-article-list :articleList="articleList"></blog-article-list>
                 </el-col>
             </el-row>
@@ -90,5 +91,7 @@ export default {
 </style>
 
 <style lang="scss">
-
+    .articleCardGroupTitle {
+        color: $textFontColor_dark;
+    }
 </style>
