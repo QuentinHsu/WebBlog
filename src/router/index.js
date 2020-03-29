@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 // import Home from '../views/Home.vue'
 import index from '../views/index.vue'
 import homePage from '../components/homePage/homePage.vue'
+import documentListPage from '@/components/documentListPage/documentListPage'
 import documentPage from '../components/documentPage/documentPage.vue'
 import aboutPage from '@/components/aboutPage/aboutPage.vue'
 
@@ -20,8 +21,13 @@ const routes = [
         component: homePage
       },
       {
-        path: '/document',
-        name: 'document',
+        path: '/documentList',
+        name: 'documentListPage',
+        component: documentListPage
+      },
+      {
+        path: '/document/:id',
+        name: 'documentPage',
         component: documentPage
       },
       {

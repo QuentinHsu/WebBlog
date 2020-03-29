@@ -5,7 +5,7 @@
             <!-- 首页 -->
         </el-col>
         <el-col :span="3">
-            <router-link :to="{name: 'document'}">文档</router-link>
+            <router-link :to="{name: 'documentListPage'}">文档</router-link>
         </el-col>
         <el-col :span="3">
             <router-link :to="{name: 'about'}">关于</router-link>
