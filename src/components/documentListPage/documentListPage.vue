@@ -1,13 +1,17 @@
 <template>
     <el-row>
         <el-col :span="24" class="blogArticleList">
-            <blog-article-list :articleList='articleList'></blog-article-list>
+            <document-card :articleList='articleList'></document-card>
         </el-col>
     </el-row>
 </template>
 
 <script>
+import documentCard from './documentCard.vue'
 export default {
+    components: {
+        'document-card': documentCard
+    },
     data() {
         return {
             articleList:[
