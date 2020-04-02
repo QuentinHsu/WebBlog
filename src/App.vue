@@ -26,6 +26,18 @@ export default {
 // }
 /*定义滚动条高宽及背景
  高宽分别对应横竖滚动条的尺寸*/
+@-moz-document url-prefix() {
+  html {
+    overflow: -moz-hidden-unscrollable; /*注意！若只打 hidden，chrome 的其它 hidden 会出问题*/
+    height: 100%;
+  }
+
+  body {
+    height: 100%;
+    width: calc(100vw + 18px); /*浏览器滚动条的长度大约是 18px*/
+    overflow: auto;
+  }
+}
 ::-webkit-scrollbar
 {
     width:1px;
