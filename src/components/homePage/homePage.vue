@@ -66,7 +66,6 @@ export default {
                     delete item.summary
                     delete item.createTime
                 })
-                console.log( this.articleList )
             })
         },
     },
@@ -83,16 +82,29 @@ export default {
 .content {
     .todayNum {
         margin-top: 1vh;
-        color: $textFontColor_dark;
         font-size: 100%;
     }
 }
 
 
+
 </style>
 
 <style lang="scss">
-    .articleCardGroupTitle {
-        color: $textFontColor_dark;
+    @media (prefers-color-scheme: dark) {
+        .todayNum {
+            color: $textFontColor_dark;
+        }
+        .articleCardGroupTitle {
+            color: $textFontColor_dark;
+        }
+    }
+    @media (prefers-color-scheme: light) {
+        .todayNum {
+            color: $textFontColor_light;
+        }
+        .articleCardGroupTitle {
+            color: $textFontColor_light;
+        }
     }
 </style>

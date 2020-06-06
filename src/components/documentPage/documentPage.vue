@@ -61,6 +61,8 @@ export default {
 
 <style lang="scss">
 .documentPage {
+    width: 85%;
+    margin: 0 auto;
     min-height:78.5vh;
     .currentArticleInfo {
         .currentArticleTitle{
@@ -103,7 +105,12 @@ export default {
                 width: 25vw;
                 margin: 0.5vh auto;
             }
-            code {
+            blockquote {
+                text-align: center;
+                margin: 0 auto;
+            }
+            pre code {
+                // padding-left: 2vw;
                 font-size: 90%;
             }
         }

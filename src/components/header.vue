@@ -2,7 +2,6 @@
     <el-row class="headerPage" :class=" headerFixed?'isFixed':'' ">
         <el-col :span="3">
             <router-link :to="{name:'homePage'}">首页</router-link>
-            <!-- 首页 -->
         </el-col>
         <el-col :span="3">
             <router-link :to="{name: 'documentListPage'}">文档</router-link>
@@ -10,7 +9,6 @@
         <el-col :span="3">
             <router-link :to="{name: 'about'}">关于</router-link>
         </el-col>
-        <!-- <router-view></router-view> -->
     </el-row>
 </template>
 

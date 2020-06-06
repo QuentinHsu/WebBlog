@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import Home from '../views/Home.vue'
 import index from '../views/index.vue'
 import homePage from '../components/homePage/homePage.vue'
 import documentListPage from '@/components/documentListPage/documentListPage'

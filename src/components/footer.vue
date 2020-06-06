@@ -1,5 +1,5 @@
 <template>
-    <el-row class="footer">
+    <el-row class="footerPage">
         <el-col>
             <footer :span="24" class="footerInfo noSelectText">
                 <div>Designed By Quentin Hsu</div>
